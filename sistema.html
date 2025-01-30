@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema</title>
+    <link rel="stylesheet" href="css/sistemastyle.css">
+    <link rel="icon" type="image/jpg" href="imgs/yujifavicon.jpg">
+</head>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <ul class="box1">
+                <li><a href="#1">1: Introduction</a></li>
+                <li><a href="#2">2: Character Creation</a></li>
+                <ul>
+                    <li><a href="#2.1">Attributes</a></li>
+                    <li><a href="#2.2">Mastery</a></li>
+                    <li><a href="#2.3">Perks</a></li>
+                    <li><a href="#2.4">Features</a></li>
+                    <li><a href="#2.5">Congenital Traits</a></li>
+                </ul>
+                <li><a href="#3">3: Experience</a></li>
+                <ul>
+                    <li><a href="#3.1">Leveling Up</a></li>
+                    <li><a href="#3.2">Ranks</a></li>
+                </ul>
+                <li><a href="#4">4: Modifiers</a></li>
+                <ul>
+                    <li><a href="#4.1">Character</a></li>
+                    <li><a href="#4.2">Equipments</a></li>
+                    <li><a href="#4.3">Skills</a></li>
+                    <li><a href="#4.4">Test</a></li>
+                </ul>
+                <li><a href="#5">5: Skills</a></li>
+                <ul>
+                    <li><a href="#5.1">Classes</a></li>
+                    <li><a href="#5.2">Types</a></li>
+                </ul>
+                <li><a href="#6">6: Weapons & Equipment</a></li>
+                <ul>
+                    <li><a href="#6.1">Models</a></li>
+                    <li><a href="#6.2">Unarmed Combat</a></li>
+                    <li><a href="#6.4">Wielding Weapons</a></li>
+                    <li><a href="#6.4">Wearing Armor</a></li>
+                </ul>
+                <li><a href="#7">7: Tests & Conflict</a></li>
+                <ul>
+                    <li><a href="#7.1">Dices vs. Dices</a></li>
+                    <li><a href="#7.2">Rolling Actions</a></li>
+                </ul>
+            </ul>
+            <ul class="box2">
+                <li><a href="#8">8: Advantages</a></li>
+                <ul>
+                    <li><a href="#8.1">Classes</a></li>
+                    <li><a href="#8.2">Maneuvers</a></li>
+                    <li><a href="#8.3">Disadvantages</a></li>
+                </ul>
+                <li><a href="#9">9: Combat</a></li>
+                <ul>
+                    <li><a href="#9.1">Turns</a></li>
+                    <li><a href="#9.2">Choosing a Action</a></li>
+                    <li><a href="#9.3">Attack and Defense</a></li>
+                    <li><a href="#9.4">Damaging your Opponent</a></li>
+                </ul>
+                <li><a href="#10">10: Combat Mechanics</a></li>
+                <ul>
+                    <li><a href="#10.1">Recovery Turns</a></li>
+                    <li><a href="#10.2">Attack Table</a></li>
+                    <li><a href="#10.3">Damage Table</a></li>
+                    <li><a href="#10.4">Resisting Damage</a></li>
+                    <li><a href="#10.5">Aim</a></li>
+                    <li><a href="#10.6">Tricks</a></li>
+                </ul>
+                <li><a href="#11">11: Common Skills</a></li>
+                <ul>
+                    <li><a href="#11.1">Actions</a></li>
+                    <li><a href="#11.2">Reactions</a></li>
+                    <li><a href="#11.3">Enhancements</a></li>
+                    <li><a href="#11.4">Tactical</a></li>
+                </ul>
+                <li><a href="#12">12: Movement</a></li>
+                <ul>
+                    <li><a href="#12.1">Moving</a></li>
+                    <li><a href="#12.2">Attacking while Moving</a></li>
+                    <li><a href="#12.3">Reacting to Movement</a></li>
+                    <li><a href="#12.4">Chasing</a></li>
+                </ul>
+            </ul>
+            <ul class="box3">
+                <li><a href="#13">13: Field</a></li>
+                <ul>
+                    <li><a href="#13.1">Line of Sight</a></li>
+                    <li><a href="#13.1">Sneaking</a></li>
+                    <li><a href="#13.2">Distance</a></li>
+                </ul>
+                <li><a href="#14">14: Disadvantages</a></li>
+                <ul>
+                    <li><a href="#14.1">Wounds</a></li>
+                    <li><a href="#14.2">Cold</a></li>
+                    <li><a href="#14.3">Concussion</a></li>
+                    <li><a href="#14.4">Electric</a></li>
+                    <li><a href="#14.5">Fear</a></li>
+                    <li><a href="#14.6">Heat</a></li>
+                    <li><a href="#14.7">Light</a></li>
+                    <li><a href="#14.8">Penetration</a></li>
+                    <li><a href="#14.9">Slashing</a></li>
+                </ul>
+                <li><a href="#15">15: Effects</a></li>
+                <ul>
+                    <li><a href="#15.1">Conditions</a></li>
+                    <li><a href="#15.2">Effects</a></li>
+                    <li><a href="#15.3">Passives</a></li>
+                    <li><a href="#15.4">Properties</a></li>
+                </ul>
+                <li><a href="#15">16: Perks</a></li>
+                <ul>
+                    <li><a href="#15.1">List</a></li>
+                </ul>
+                <li><a href="#17">17: Skill Trees</a></li>
+                <ul>
+                    <li><a href="#17.1">Martial Arts</a></li>
+                    <li><a href="#17.1">Superhuman Features</a></li>
+                </ul>
+            </ul>
+            <ul class="box4">
+                <li><a href="#21">Skill Trees: Jujutsu Kaisen</a>
+                    <ul>
+                        <li><a href="#13.2">Blood Manipulation</a></li>
+                        <li><a href="#13.2">Construction</a></li>
+                        <li><a href="#13.2">Cursed Speech</a></li>
+                        <li><a href="#13.2">Electric Energy</a></li>
+                        <li><a href="#13.1">Jujutsu</a></li>
+                        <li><a href="#13.2">Limitless</a></li>
+                        <li><a href="#13.2">Love Curse</a></li>
+                        <li><a href="#13.2">Ratio</a></li>
+                        <li><a href="#13.2">Ten Shadows</a></li>
+                    </ul>
+            </ul>
+        </div>
+    </header>
+    <hr>
+    <img src="css/imgs/Img1.jpg" id="img1">
+    <h2 id="1"><u>1: Introduction</u></h2>
+    <p> Unbeatables é um sistema de RPG para aqueles que querem narrar e/ou jogar embates épicos e criar personagens
+        excepcionais, “imbatíveis”, “especiais”, “não-humanos”. </p>
+    <p> Feito para temas de fantasia, especialmente Animes e HQ’s, Unbeatables é um sistema de RPG feito para aqueles
+        que querem criar personagens excepcionais, “imbatíveis” e viver combates emocionantes. </p>
+    <p> O foco de Unbeatables é o de fornecer um sistema de combate onde os jogadores possuem um alto índice de ações e
+        opções para lidar com seus adversários. </p>
+    <p> Ele tem uma forte base em reações e busca ser o mais dinâmico possível sem ser desnecessariamente complicado.
+        Cada escolha pode mudar o rumo do combate, mas não há uma necessariamente melhor do que a outra (não
+        intencionalmente), de forma que você pode aderir diferentes estilos de luta. </p>
+    <p> Forje seu caminho para a vitória com a sua criatividade, os pontos fortes do seu personagem e um pouco de sorte.
+    </p>
+    <hr>
+    <h2 id="2"><u>2: Character Creation</u></h2>
+    <p> Personagens possuem diversas características e detalhes próprios que o fazem único. Aqui veremos cada um deles.
+    </p>
+    <p> ID: Sua identidade. Todo personagem carrega um nome, uma idade, uma aparência… não há regras impostas sobre
+        isso. </p>
+    <p> Se o seu personagem deve ter alguma Congenital Trait por nascimento, negocie com o seu Mestre; essa é uma função
+        que está completamente á controle dele e das Congenital Traits que ele dispor para seus jogadores pegarem.</p>
+    <p> Leia sobre a distribuição de Atributos, Perks e Stats no Capítulo 3.</p>
+    <h3 id="2.1">Attributes</h3>
+    <p> <span class="modifier-18px"><b>Vigor:</b></span> <span class="modifier-small"> Vitality +1.</span>
+    </p>
+    <p> <i><span class="modifier-small">O Vigor determina o quanto seu personagem dura em combate.</span></i></p>
+    <p> <span class="modifier-18px"><b>Strength:</b></span> <span class="modifier-small"> Physical Strength +1.</span>
+    </p>
+    <p> <i><span class="modifier-small">A Strength determina sua força física, o quão imponente seus ataques
+                são.</span></i></p>
+    <img src="css/imgs/Img2.jpg" id="img2">
+    <p> <span class="modifier-18px"><b>Dexterity:</b></span> <span class="modifier-small"> Technique +1.</span></p>
+    <p> <i><span class="modifier-small">A Dexterity é a sua técnica, a sua capacidade de realizar delicados e precisos
+                movimentos.</span></i></p>
+    <p> <span class="modifier-18px"><b>Agility:</b></span> <span class="modifier-small"> Speed +1.</span></p>
+    <p> <i><span class="modifier-small">A Agility é o quão "leve" seu personagem é, o quão rápido ele consegue se
+                mover.</span></i></p>
+    <p> <span class="modifier-18px"><b>Reflexes:</b></span> <span class="modifier-small"> Reflex, Perception +1.</span>
+    </p>
+    <p> <i><span class="modifier-small">Os Reflexes determinam sua velocidade de reação, é o quão agilmente você
+                consegue agir ao perceber algo.</span></i></p>
+    <p> <span class="modifier-18px"><b>Acuity:</b></span> <span class="modifier-small"> Proficiency, Wits +1.</span>
+    </p>
+    <p> <i><span class="modifier-small">Conhecimento e domínio de habilidades. Masterize e aprenda diversas
+                técnicas.</span></i></p>
+    <p> <span class="modifier-18px"><b>Constitution:</b></span> <span class="modifier-small"> Endurance +1.</span></p>
+    <p> <i><span class="modifier-small">A Constitution determina o quanto seu personagem sustenta ser atacado. Vigor te
+                deixa durar em combate, enquanto Constitution reduz o dano de ataques.</span></i></p>
+    <p> <span class="modifier-18px"><b>Spirit:</b></span> <span class="modifier-small"> Spiritual Strength +1.</span>
+    </p>
+    <p> <i><span class="modifier-small">O Spirit determina sua potência espiritual, mágica.</span></i></p>
+    <hr>
+    <h3 id="2.2">Mastery</h3>
+    <p>Mastery é um marco que você pode alcançar com seus atributos ao evoluí-los até um certo ponto.</p>
+    <p>Ao alcançar uma Mastery, você recebe uma Mastery Mark; os benefícios do seu atributo são concedidos uma segunda
+        vez apenas para a compra que
+        alcançou o marco. O Ponto 6 em Agility vale Speed +2, por exemplo, mas o Ponto 7 não vale benefício algum.</p>
+    <p>Alcançar uma Mastery Mark vai aumentar a Mastery em um Mastery Level. Cada Mastery Level faz aquele Attribute
+        passar a custar +0.5 para ser comprado.</p>
+    <p>"Beginner" não concede bônus algum e nem aumenta os custos de compra.</p>
+    <p><span class="modifier-18px"><b>Beginner:</b></span> <span class="modifier-small"> 5 ou Menos em um Attribute. Não
+            é considerado um marco de Mastery (não consegue um segundo ponto).</span></p>
+    <p><span class="modifier-18px"><b>Skilled:</b></span> <span class="modifier-small"> 6 em um Attribute.</span></p>
+    <p><span class="modifier-18px"><b>Master:</b></span> <span class="modifier-small"> 11 em um Attribute.</span></p>
+    <p><span class="modifier-18px"><b>Legend:</b></span> <span class="modifier-small"> 18 em um Attribute.</span></p>
+    <hr>
+    <h3 id="2.3">Perks</h3>
+    <p>Perks são os "talentos" do seu personagem. Eles te dão bônus e habilidades específicas.</p>
+    <p>Alguns Perks possuem mais de um nível para que você possa investir. Cada nível de um Perk custa 1 Perk Point.</p>
+    <hr>
+    <h3 id="2.4">Features</h3>
+    <p>Features determinam as características e a personalidade do seu personagem. Eles vão ditar como o seu personagem
+        se comporta fora de combate.</p>
+    <p> Shonens costumam ter foco em suas lutas, e não em criar personagens complexos. Isso não quer dizer que os
+        personagens do jogo não possam ser complexos, mas que as ferramentas usadas para montá-los nesse quesito são
+        simples.</p>
+    <p> De novo com Shonens, a personalidade de um personagem e a maneira como a que ele luta ou se comporta em combate
+        costumam ser absurdamente diferente. </p>
+    <p> As suas Features vão ser responsáveis por modificar positivamente e negativamente diversas rolagens que ocorram
+        fora de combate, de forma que ela ditará os fortes e fracos do seu personagem. Para isso há uma lista de
+        diferentes Features, e você escolherá algumas delas para serem seus "Traits" e outras para serem suas "Flaws".
+    </p>
+    <p> Há alguns atos fora de combate como pular de um galho para o outro ou atingir um alvo de longe que podem ser
+        confundidos com habilidades de combate. Você estará testando suas habilidades de combate nesses casos, então não
+        roda uma Feature.</p>
+    <p> Você distribui as Traits e Flaws á partir de quatro níveis diferentes (quantas você pode distribuir vai depender
+        da sua ficha).</p>
+    <p><b>Traits:</b><span class="modifier-small"> Minor Traits: +1. Major Traits: +3. Epic Traits: +6. Legendary
+            Traits: +10.</span></p>
+    <p><b>Flaws:</b> <span class="modifier-small"> Minor Flaws: -1. Major Flaws: -3. Epic Flaws: -6. Legendary Flaws:
+            -10.</span></p>
+    <p><b>Lista de Features:</b></p>
+    <p><i><span class="modifier-small">Appearance: Sua beleza física.</span></i></p>
+    <p><i><span class="modifier-small">Bravery: Sua coragem, habilidade de ignorar o medo.</span></i></p>
+    <p><i><span class="modifier-small">Charisma: Sua linguagem corporal e magnetismo pessoal. É o quão bem você se
+                comunica e o quanto as pessoas querem te ter por perto.</span></i></p>
+    <p><i><span class="modifier-small">Empathy: Sua habilidade em sentir que há algo errado com alguém
+                emocionalmente.</span></i></p>
+    <p><i><span class="modifier-small">Intellect: Sua rapidez de pensamento.</span></i></p>
+    <p><i><span class="modifier-small">Intimidation: Sua habilidade de aterrorizar alguém com uma ameaça
+                física.</span></i></p>
+    <p><i><span class="modifier-small">Leadership: Sua habilidade de inspirar os outros á seguirem certos
+                ideais.</span></i></p>
+    <p><i><span class="modifier-small">Patience: Sua calma, habilidade de não ficar ansioso ou se irritar.</span></i>
+    </p>
+    <p><i><span class="modifier-small">Persuasion: Sua habilidade de manipular os outros á fazerem sua
+                vontade.</span></i></p>
+    <p><i><span class="modifier-small">Survival: Seu conhecimento de caça, gastronomia, meteorologia e o básico para
+                sobreviver.</span></i></p>
+    <hr>
+    <h3 id="2.5">Congenital Traits</h3>
+    <img src="css/imgs/Img4.jpg" id="img4">
+    <p> Congenital Traits são obtidas por nascimento e por puro privilégio que é concedido pelo mestre. Diferente das
+        Traits e Flaws, as Congenital Traits podem conceder qualquer tipo de bônus, seja ele um bônus de feature, de
+        atributo ou até mesmo de combate. Elas são irrestritas e o motivo delas existirem é para que o sistema de
+        Unbeatables possa ser transformado em diferentes temas.</p>
+    <p> Vamos supor que você quer fazer um RPG de DBZ. Esse é um RPG onde os níveis dos personagens são muito altos, de
+        forma que não são traduzidos tão fielmente assim pelo sistema de atributos. Então você pode criar, por exemplo:
+    </p>
+    <p> "Power Level" (name of the Congenital Trait), com um efeito que receberá um número específico. Pra tantos % de
+        Power Level que esse personagem possui acima do outro, mais bônus em diversos modificadores de combate ele
+        receberá.</p>
+    <p> Dentro de um mundo, as Congenital Traits também podem definir vantagens genéticas.</p>
+    <p> "Uchiha Clan" (name of the Congenital Trait). Aqueles que possuirem essa Congenital Trait vão ter um bônus de +1
+        de Dano em Jutsus do tipo Katon e Shurikenjutsu, e vão liberar a Skill Tree exclusiva do Clã Uchiha.</p>
+    <hr>
+    <h2 id="3"><u>3: Experience</u></h2>
+    <p> Experiência (XP) é o valor que determina o quão poderoso um personagem é. Todo personagem possui um valor de
+        experiência, e quanto mais experiência ele tiver, maior será o seu nível.</p>
+    <p> Níveis são acessados por quantias de experiência específica. Por padrão, os Attributes e Perks do seu personagem
+        são 0 e precisam ser distribuidos através dos Points.</p>
+    <p> Como já citado antes, os Níveis tem um requerimento de XP para serem alcançados. O valor que cada nível pede é
+        fixo, ou seja, o contador não reseta quando você alcança um novo nível.</p>
+    <hr>
+    <h3 id="3.1">Leveling Up</h3>
+    <p><b>HP:</b> Vitality*4 * Level.</p>
+    <p><b>MP:</b> Proficiency*2 * Level.</p>
+    <p><b>SP:</b> Vitality * Level.</p>
+    <p><b>AC:</b> 1.0.</p>
+    <p> <i><span class="modifier-even-smaller">A Armor Class é melhorada com Superhuman Features de
+                Constitution.</span></i></p>
+    <p><i><span class="modifier-small">Level 0: 10 Attribute Points. 1 Perk Point.</span></i></p>
+    <p><i><span class="modifier-small">Every 1 Level: +1 Attribute Point.</span></i></p>
+    <p><i><span class="modifier-small">Every 2 Level: -.</span></i></p>
+    <p><i><span class="modifier-small">Every 4 Level: -.</span></i></p>
+    <p><i><span class="modifier-small">Every 5 Level: +1 Perk Point.</span></i></p>
+    <img src="css/imgs/Img3.jpg" id="img5">
+    <hr>
+    <h3 id="3.2">Ranks</h3>
+    <p> É possível receber um "Rank" baseado em qual nível você está. </p>
+    <p> Ranks são similares ás Congenital Traits. Eles só podem ganhar significado através do Mestre, caso ele queira
+        prender alguma técnica, equipamento ou coisa do jogo para ser acessível apenas pra personagens de certo Rank.
+    </p>
+    <p> Um exemplo de Rank seria: "no meu Jogo de Naruto, todos os personagens que passarem da Prova Chunin receberão o
+        Rank "Chunin" e ganharão acesso á uma bandana especial que concede +10 de MP", ou "no meu Jogo de Jujutsu
+        Kaisen, personagens acima do Nível 15 são considerados personagens de Grau Um e possuem acesso á técnica:
+        Manipulação Avançada de Energia Amaldiçoada". </p>
+    <p> <span class="modifier-18px"><b>Level 0 - 2:</b></span><span class="modifier-small"> [0] 0 XP. [1] 30 XP. [2] 60
+            XP.</span></p>
+    <p> <i><span class="modifier-small">Um mero estudante da academia que acabou de iniciar.</span></i></p>
+    <p> <span class="modifier-18px"><b>Level 3 - 6:</b></span><span class="modifier-small"> [3] 100 XP. [4] 150 XP. [5]
+            250 XP. [6] 400 XP.</span></p>
+    <p> <i><span class="modifier-small">Você já é experiente o suficiente para ir lidar com inimigos de baixo
+                escalão.</span></i></p>
+    <p> <i><span class="modifier-even-smaller">Sasuke no País da Névoa.</span></i></p>
+    <p> <span class="modifier-18px"><b>Level 7 - 10:</b></span><span class="modifier-small"> [7] 500 XP. [8] 650 XP. [9]
+            800 XP. [10] 1.000 XP. </span></p>
+    <p> <i><span class="modifier-small">Considere-se a elite entre os novatos. Você tem uma certa esperança contra
+                ameaças maiores.</span></i></p>
+    <p> <i><span class="modifier-even-smaller">Lee Part I.</span></i></p>
+    <p> <span class="modifier-18px"><b>Level 11 - 14:</b></span><span class="modifier-small"></span></p>
+    <p> <i><span class="modifier-small">Você possui uma habilidade razoável. Não se destaca mas pode ser considerado um
+                "adulto" em termos de força, alguém que não vai desapontar.</span></i></p>
+    <p> <i><span class="modifier-even-smaller">Kabuto Part I.</span></i></p>
+    <p> <span class="modifier-18px"><b>Level 15 - 19:</b></span><span class="modifier-small"></span></p>
+    <p> <i><span class="modifier-small">Sua habilidade se destaca entre os demais. Talvez você ainda não seja visto
+                entre os mais fortes, mas você já não é visto como um qualquer.</span></i></p>
+    <p> <i><span class="modifier-even-smaller">Yuji e Megumi em Shibuya.</span></i></p>
+    <p> <span class="modifier-18px"><b>Level 20 - 24:</b></span><span class="modifier-small"></span></p>
+    <p> <i><span class="modifier-small">Você é visto como um exemplo realista de força. Não há nada mundano que não
+                esteja no seu alcance em derrotar.</span></i></p>
+    <p> <i><span class="modifier-even-smaller">Mei Mei, Nanami, Sasuke no País do Ferro.</span></i></p>
+    <p> <span class="modifier-18px"><b>Level 25 - 29:</b></span><span class="modifier-small"></span></p>
+    <p> <i><span class="modifier-small">Você reina entre os fortes. Se antes você era visto como um exemplo de força,
+                aqui você é visto como diferenciado entre os mais fortes.</span></i></p>
+    <p> <i><span class="modifier-even-smaller">Zenin Naobito, Oonoki, Yondaime Raikage.</span></i></p>
+    <p> <span class="modifier-18px"><b>Level 30 - 39:</b></span><span class="modifier-small"></span></p>
+    <p> <i><span class="modifier-small">Você fugiu do "mundano". Monstros não tem espaço dentro das competições de
+                humanos; sua força é medida como especial.</span></i></p>
+    <p> <i><span class="modifier-even-smaller">Bijuus, Itachi, Maki, Nagato, Yuta.</span></i></p>
+    <p> <span class="modifier-18px"><b>Level 40 - 49:</b></span><span class="modifier-small"></span></p>
+    <p> <i><span class="modifier-small">Você é uma besta, um tipo de desastre natural por conta própria. Exércitos de
+                homens precisam se juntar para te parar, e não há ameaça alguma que você não tenha uma chance de
+                derrotar.</span></i></p>
+    <p> <i><span class="modifier-even-smaller">Kenjaku, Kyuubi, Obito como Jinchuriki, Yorozu.</span></i></p>
+    <p> <span class="modifier-18px"><b>Level 50:</b></span><span class="modifier-small"> [50] 100.000 XP.</span></p>
+    <p> <i><span class="modifier-small">Imbatível. Acima de tudo e todos, você é como um deus, não há monstros ou
+                desastres que possam te ameaçar. Sua força pode ultrapassar os horizontes do próprio sistema.</span></i>
+    </p>
+    <p> <i><span class="modifier-even-smaller">Gojo, Hashirama, Madara, Sukuna.</span></i></p>
+    <p> <i><span class="modifier-small">Á partir do 50, os Níveis devem ser customizados pelo próprio mestre. É
+                recomendado que esse sistema de níveis não seja visto como um powerscaling entre obras diferentes;
+                apesar de não ter problema em ultrapassar o nível máximo caso você mestre um jogo como Dragon Ball Z,
+                não compare o Goku de DBS com um Nível 50 de Naruto.</span></i></p>
+    <p> <i><span class="modifier-small">Isso vai te fazer ter vontade de dar um Nível absurdo como 500 para seus
+                jogadores que tiverem SSJ Azul, mas você pode brincar com as Congenital Traits para dar a impressão da
+                força daquele mundo e tratar o sistema de níveis de acordo com o Anime. Nível 20 era quando estavam na
+                saga Freeza, nível 30 na Cell... use sua criatividade.</span></i></p>
+    <p> <i><span class="modifier-small">Não se sinta desmotivado de ultrapassar o nível 50, aliás, especialmente para
+                grandes vilões ou ameaças. Ás vezes os vilões conseguem cumprir parte dos seus planos de obter pôder e
+                se tornam ainda mais fortes, como no caso do Madara após sua morte, então abra essa customização para
+                dar mais vida ao seu jogo.</span></i></p>
+    <hr>
+    <h2 id="4"><u>4: Modifiers</u></h2>
+    <p> Modifiers são responsáveis por conceder bônus (e potenciais penalidades) para as rolagens das mais variadas
+        ações e reações. </p>
+    <p> Elas são sempre ganhas através de uma outra fonte, como atributos, skills, passivas ou equipamentos.</p>
+    <p> Lista de Modifiers;</p>
+    <hr>
+    <h3 id="4.1">Character</h3>
+    <p> Esses Modifiers pertencem diretamente ao seu personagem. Alguns não são obtíveis em atributos, mas eles não
+        possuem condições para serem rodados, são inerentes seus.</p>
+    <p> Números sempre são arredondados para cima se chegarem na marca de .5 ou mais. </p>
+    <p> <span class="modifier-18px"><b>Action Points:</b></span><span class="modifier-small"> O número de vezes que você
+            pode agir no turno (AP).</span></p>
+    <p> <span class="modifier-18px"><b>Armor Class:</b></span><span class="modifier-small"> A Armor Class determina o
+            quão dura e resistente o seu corpo, a sua defesa é. Ela não se difere de Tenacity conceitualmente, só em
+            balanceamento. Tenacity costuma ser encontrada como pequenos modificadores, enquanto a Armor Class costuma
+            de fato representar um novo grau de resistência, como uma armadura de verdade que seu personagem vestiu
+            (AC).</span></p>
+    <p> <span class="modifier-18px"><b>Endurance:</b></span><span class="modifier-small"> O quão "durão" você é, o quão
+            sensível á tomar dano o seu personagem é (End).</span></p>
+    <p> Também auxilia os personagens á resistir os efeitos de Wounds, mas o modificador costuma ser ignorado na hora de
+        uma Wound ser infligida.</p>
+    <p> <span class="modifier-18px"><b>Health Points:</b></span><span class="modifier-small"> Sua saúde e determinação
+            em combate. Enquanto seu HP não for zerado, você pode continuar lutando (HP).</span></p>
+    <p> <span class="modifier-18px"><b>Health Recovery:</b></span><span class="modifier-small"> Recupera sua vida em
+            turnos de recuperação (HR).</span></p>
+    <img src="css/imgs/Img6.jpg" id="img6">
+    <p> <span class="modifier-18px"><b>Magic Points:</b></span><span class="modifier-small"> Sua fonte de magia e o
+            quanto consegue conjurar em combate (MP).</span></p>
+    <p> <span class="modifier-18px"><b>Magic Recovery:</b></span><span class="modifier-small"> Recupera sua magia em
+            turnos de recuperação (MR).</span></p>
+    <p> <span class="modifier-18px"><b>Perception:</b></span><span class="modifier-small"> Sua leitura de ambiente, o
+            quão bem você percebe seus arredores (Per).</span></p>
+    <p> <span class="modifier-18px"><b>Physical Strength:</b></span><span class="modifier-small"> Sua força física, o
+            quão bate forte e submete os outros á força (PS).</span></p>
+    <p> <span class="modifier-18px"><b>Reflex:</b></span><span class="modifier-small"> Seus reflexos, tem um foco maior
+            em reações (Rfx).</span></p>
+    <p> <span class="modifier-18px"><b>Resistance:</b></span><span class="modifier-small"> O quão duro seu corpo ou algo
+            que está te defendendo é. Resistência diminui o dano pelo seu valor fixo e não costuma ser ignorado por
+            Wounds (Res).</span></p>
+    <p> <span class="modifier-18px"><b>Speed:</b></span><span class="modifier-small"> Sua velocidade, tem um foco maior
+            nas suas ações e movimentação (Spd).</span></p>
+    <p> <span class="modifier-18px"><b>Spiritual Strength:</b></span><span class="modifier-small"> Sua força espiritual,
+            capacidade de danificar os outros com habilidades mágicas (SS).</span></p>
+    <p> <span class="modifier-18px"><b>Stamina Points:</b></span><span class="modifier-small"> Sua fonte de stamina,
+            determina o quão bem fisicamente você está para lutar. A Stamina costuma ser acumulada com cansaço e com
+            ferimentos, pois ela não trata apenas do seu folego, mas sim do seu condicionamento físico em geral
+            (SP).</span></p>
+    <p> <span class="modifier-18px"><b>Stamina Recovery:</b></span><span class="modifier-small"> Recupera sua stamina em
+            turnos de recuperação (SR).</span></p>
+    <p> <span class="modifier-18px"><b>Technique:</b></span><span class="modifier-small"> Sua expertise técnica em
+            combate e o quão meticuloso você consegue ser com os seus movimentos, afeta a sua precisão e sua habilidade
+            com artes marciais (Tec).</span></p>
+    <p> <span class="modifier-18px"><b>Tenacity:</b></span><span class="modifier-small"> Tenacity representa o quão
+            "duro" seu corpo é, o quão difícil é de danificar ele.</span></p>
+    <p> É superior á Endurance em relação á reduzir dano pois não costuma ser ignorado por Wounds.</p>
+    <p> <span class="modifier-18px"><b>Wits:</b></span><span class="modifier-small"> (Wit).</span></p>
+    <hr>
+    <h3 id="4.2">Equipment</h3>
+    <p> <span class="modifier-18px"><b>Damage:</b></span><span class="modifier-small"> Dano que será jogado com o Item
+            (Dmg).</span></p>
+    <p> <span class="modifier-18px"><b>Durability:</b></span><span class="modifier-small"> É a vida e a resistência do
+            item (Dur).</span></p>
+    <p> <span class="modifier-18px"><b>Hardening:</b></span><span class="modifier-small"> Hardening é um valor que
+            transformará qualquer Slashing / Piercing Damage que seu personagem tomar em Concussion Damage.</span></p>
+    <p>Sobrou 3 de Damage, então esses 3 de Damage vão ser considerados do seu Tipo original (Slashing ou Piercing, que
+        antes estavam sendo transformados em Concussion).</p>
+    <p> <span class="modifier-18px"><b>Model:</b></span><span class="modifier-small"> Compartilha características de
+            Equipaments com o mesmo Model (por ex., Katanas e Nodachis são do mesmo Model, mas possuem diferenças únicas
+            de tamanho, dano e etc). (Model).</span></p>
+    <p> <span class="modifier-18px"><b>Name:</b></span><span class="modifier-small"> Nome único do Item (Name).</span>
+    </p>
+    <p> <span class="modifier-18px"><b>Reach:</b></span><span class="modifier-small"> Alcance do Item (Rch).</span></p>
+    <p> <span class="modifier-18px"><b>Special Effect:</b></span><span class="modifier-small"> Efeito que o Item concede
+            (Speff).</span></p>
+    <hr>
+    <h3 id="4.3">Skill</h3>
+    <p> <span class="modifier-18px"><b>Action Cost:</b></span><span class="modifier-small"> Custo de Action Points da
+            Skill (AC).</span></p>
+    <p> <span class="modifier-18px"><b>Cooldown:</b></span><span class="modifier-small"> Pode ter Turns, Rows ou Dias
+            que você deve esperar até poder usar de novo. (Cd).</span></p>
+    <p> <span class="modifier-18px"><b>Damage:</b></span><span class="modifier-small"> Dano da Skill (Dmg) .</span></p>
+    <p> <span class="modifier-18px"><b>Limb:</b></span><span class="modifier-small"> Qual Limb a Skill usa para atacar
+            (Limb).</span></p>
+    <p> <span class="modifier-18px"><b>Nature:</b></span><span class="modifier-small"> Se há um elemento da natureza
+            (Nat).</span></p>
+    <p> <span class="modifier-18px"><b>Parent:</b></span><span class="modifier-small"> "Herda" uma Skill específica.
+            Funciona exatamente da mesma forma que a Skill mencionada, tendo detalhes diferentes que serão citados nela
+            (Par).</span></p>
+    <p> <span class="modifier-18px"><b>Reach:</b></span><span class="modifier-small"> Alcance da Skill, até onde ela
+            alcança (Rch) .</span></p>
+    <p> <span class="modifier-18px"><b>Skill Speed:</b></span><span class="modifier-small"> Skills possuem sua própria
+            fórmula de velocidade. Skill Speed recebe um Tipo específico, e esse Tipo determinará um Atributo para esse
+            Modificador (ex.: se a Skill Speed for Accuracy, isso significa que a Skill Speed é Technique x 1) (SKS).
+        </span></p>
+    <p> Accuracy: Technique.</p>
+    <P> Evocation: Spiritual Strength.</P>
+    <p> Martial: Speed.</p>
+    <p> <span class="modifier-18px"><b>Strength:</b></span><span class="modifier-small"> (Str) Se refere á Physical ou
+            Spiritual Strength do Usuário, variando se a Skill for Physical ou Magical, respectivamente.</span></p>
+    <hr>
+    <h3 id="4.4">Tests</h3>
+    <p> <span class="modifier-18px"><b>Breakthrough:</b></span><span class="modifier-small"> SKS [0.5] + Tec
+            [0.3].</span></p>
+    <p> <span class="modifier-18px"><b>Evasion:</b></span><span class="modifier-small"> Rfx [0.5] + Spd [0.3].</span>
+    </p>
+    <p> <span class="modifier-18px"><b>Grappling:</b></span><span class="modifier-small"> Tec [0.5] + PS [0.3].</span>
+    </p>
+    <p> <span class="modifier-18px"><b>Guard:</b></span><span class="modifier-small"> Tec [0.5] + Rfx [0.3].</span></p>
+    <p> <span class="modifier-18px"><b>Initiative:</b></span><span class="modifier-small"> SKS [0.8].</span></p>
+    <p> <span class="modifier-18px"><b>Intuition:</b></span><span class="modifier-small"> Per [0.5] + Wit [0.3].</span>
+    </p>
+    <p> <span class="modifier-18px"><b>Precision:</b></span><span class="modifier-small"> SKS [0.5] + Tec [0.3].</span>
+    </p>
+    <p> <span class="modifier-18px"><b>Response:</b></span><span class="modifier-small"> SKS [0.5] + Rfx [0.3].</span>
+    </p>
+    <p> <span class="modifier-18px"><b>Stealth:</b></span><span class="modifier-small"> Wit [0.5] + Tec [0.3].</span>
+    </p>
+    <hr>
+    <h2 id="5"><u>5: Skills</u></h2>
+    <p> Skills são o fundamento de como agir dentro de combate. Seja atacando ou defendendo, você vai estar fazendo isso
+        através de Skills.</p>
+    <p> Skills são separadas entre muitas fatias, mas a principal delas é a separação entre "Common Skill" e "Special
+        Skill".</p>
+    <p> Common Skills são Skills que todos possuem simplesmente por criar o personagem. Elas são Skills básicas como
+        socar, chutar, correr, pular... habilidades que todos possuem por natureza, mesmo que não as domine.</p>
+    <p> Special Skills são Skills que precisam ser obtidas de algum jeito especial, seja através de Perks ou de uma
+        árvore de Skills que só você tem por causa de uma Congenital Trait.</p>
+    <p> Além disso, Common Skills normalmente servem para funcionar como fundamento para algumas Special Skills.
+        "Punch", por exemplo, é uma Skill muito básica, e se houver uma Special Skill chamada "Hook" (golpe de Boxe),
+        ela provavelmente herdará a Common Skill de Punch. </p>
+    <p> Isso significa que ela será idêntica ao Punch, mas terá algumas propriedades a mais (ou á menos) comparada á
+        Skill parente.</p>
+    <hr>
+    <h3 id="5.1">Classes</h3>
+    <p></p>
+    <img src="css/imgs/Img8.jpg" id="img8">
+    <p> <span class="modifier-18px"><b>Action Classes:</b></span><span class="modifier-small"> Todas as Classes á seguir
+            são categorizadas como "Actions".</span></p>
+    <p><i><span class="modifier-small">Attack: Alvejam um adversário hostilmente.</span></i></p>
+    <p><i><span class="modifier-small">Support: Alvejam um aliado.</span></i></p>
+    <p><i><span class="modifier-small">Enhancements: Fortificam outras ações e reações, não possuem alvo.</span></i>
+    </p>
+    <p><i><span class="modifier-small">Tactical: Interagem com o cenário ou com você mesmo.</span></i></p>
+    <p><span class="modifier-18px"><b>Reaction Classes:</b> </span><span class="modifier-small"> Todas as Classes á
+            seguir são categorizadas como "Reactions".</span></p>
+    <p><span class="modifier-small"> Vale notar que algumas delas possuem Common Skills com os exatos mesmos
+            nomes.</span></p>
+    <p><i><span class="modifier-small">Block: A habilidade de levantar uma guarda e receber o ataque nela. Capaz de
+                absorver dano, as chances de sair ferido são altas.</span></i></p>
+    <p> <i><span class="modifier-small">O bloqueio sempre se refere á levantar os braços para defender. Estar empunhando
+                uma arma não te permite usá-la para bloquear, apenas para Aparar.</span></i>
+    <p><i><span class="modifier-small">Counter: A habilidade de atingir um adversário no meio do golpe dele, impedindo-o
+                de concluí-lo.</span></i></p>
+    <p><i><span class="modifier-small">Dodge: A habilidade de sair da direção de um golpe, fazendo ele não atingir mais
+                do quê o ar.</span></i></p>
+    <p><i><span class="modifier-small">Parry: A habilidade de manualmente remover um golpe da sua direção com uma guarda
+                mais precisa e agressiva.</span></i></p>
+    <hr>
+    <h3 id="5.1">Class Types</h3>
+    <p>São os sub-tipos de cada class, determinam coisas como testes de atk vs def</p>
+    <p>Attack: Accuracy, Martial, Evocation, Mental (Wit vs Wit)</p>
+    <hr>
+    <h3 id="5.2">Types of Damage</h3>
+    <p> <span class="modifier-18px"><b>Physical Damage:</b></span><span class="modifier-small"> (Strength + Skill
+            Damage) * Skill Power * Attack Table.</span>
+    </p>
+    <p> <span class="modifier-18px"><b>Magical Damage:</b></span><span class="modifier-small"> (Spirit + Skill Damage) *
+            Skill Power * Attack Table.</span></p>
+    <p> <span class="modifier-18px"><b>Damage Reduction:</b></span><span class="modifier-small"> (Endurance + Tenacity)
+            * Armor Class.</span></p>
+    <p> Um bônus em Damage é aplicado após todos os cálculos, separadamente (ou seja, não é multiplicado). Se o bônus
+        for em Strength, Skill Damage ou Skill Power, aí ele entra na fórmula.</p>
+    <hr>
+    <h2 id="6"><u>6: Weapons & Equipment</u></h2>
+    <img src="css/imgs/Img9.jpg" id="img9">
+    <p>Essa sessão vai cobrir um pouco os específicos de como as armas se aplicam ao combate, e como a "construção" das
+        armas funcionam.</p>
+    <hr>
+    <h3 id="6.1">Models</h3>
+    <p> Como já mencionado anteriormente, toda arma possui um Model. Isso significa que ela é modelada á partir de um
+        design "parente", do qual ela vai herdar todas as suas propriedades e então adicionar as suas características
+        únicas. </p>
+    <p>Pense em um Martelo. Martelos tem todo o seu formato único e aqueles que usem de um martelo pra combate possuem
+        um arsenal específico de técnicas, correto? Mas e se esse Martelo for um Martelo de Guerra? É aí que nós vamos
+        ter de mexer na arma, e não no modelo. O martelo de guerra é um martelo, mas seu peso será único, ele terá
+        algumas ações a mais que outros martelos não possuem e seus bônus / penalidades também serão únicos.</p>
+    <p> Lista de Models: </p>
+    <p><span class="modifier-18px center"><b>Close Combat</b></p>
+    <p> <span class="modifier-18px"><b>Sword</b></span></p>
+    <p> <i><span class="modifier-small">Type: Slashing, Piercing.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: Cut, Pierce, Bash.</span></i></p>
+    <p> <span class="modifier-18px"><b>Axe</b></span></p>
+    <p> <i><span class="modifier-small">Type: Slashing.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: Hack and Slash, Cut, Bash.</span></i></p>
+    <p> <span class="modifier-18px"><b>Spear</b></span></p>
+    <p> <i><span class="modifier-small">Type: Pierce.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: Bash, Cut, Pierce.</span></i></p>
+    <p> <span class="modifier-18px"><b>Hammer</b></span></p>
+    <p> <i><span class="modifier-small">Type: Concussion.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: Bash.</span></i></p>
+    <img src="css/imgs/Img10.jpg" id="img10">
+    <p> <span class="modifier-18px"><b>Shield</b></span></p>
+    <p> <i><span class="modifier-small">Type: Concussion, Protection.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: Bash, Raise Shield, Shield Block.</span></i></p>
+    <p> <span class="modifier-18px"><b>Chains</b></span></p>
+    <p> <i><span class="modifier-small">Type: Concussion.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: (agarrar).</span></i></p>
+    <p> <span class="modifier-18px"><b>Sickle</b></span></p>
+    <p> <i><span class="modifier-small">Type: Slashing, Concussion.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: (correntes), (foice).</span></i></p>
+    <p> <span class="modifier-18px"><b>Kusarigama</b></span></p>
+    <p> <i><span class="modifier-small">Type: Slashing, Concussion.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: (correntes), (foice).</span></i></p>
+    <p><span class="modifier-18px center"><b>Throwable</b></p>
+    <p> <span class="modifier-18px"><b>Shuriken</b></span></p>
+    <p> <i><span class="modifier-small">Type: Slashing.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: Throw.</span></i></p>
+    <p> <span class="modifier-18px"><b>Throwing Knive</b></span></p>
+    <p> <i><span class="modifier-small">Type: Piercing.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: Throw.</span></i></p>
+    <p><span class="modifier-18px center"><b>Shooting</b></p>
+    <p> <span class="modifier-18px"><b>Bow</b></span></p>
+    <p> <i><span class="modifier-small">Type: Piercing.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: Shoot.</span></i></p>
+    <p> <span class="modifier-18px"><b>Pistol</b></span></p>
+    <p> <i><span class="modifier-small">Type: Slashing.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: Shoot.</span></i></p>
+    <hr>
+    <h3 id="6.2">Unarmed Combat</h3>
+    <img src="css/imgs/Img11.jpg" id="img11">
+    <p>Não estar equipando uma arma faz você estar "Unarmed".</p>
+    <p> <span class="modifier-18px"><b>Unarmed</b></span></p>
+    <p> <i><span class="modifier-small">Type: Concussion.</span></i></p>
+    <p> <i><span class="modifier-small">Actions: Punch, Kick.</span></i></p>
+    <p> <i><span class="modifier-small">Benefits: Speed +1.</span></i></p>
+    <p>Parries redirecionam os ataques para seus Braços.</p>
+    <hr>
+    <h3 id="6.3">Wearing Weapons</h3>
+    <p>Parries redirecionam os ataques para a sua Arma, e não para seus Braços.</p>
+    <p>É preciso gastar um Step para recuperar uma arma que foi Desarmada. Ser atacado no meio do Step vai te aplicar
+        "Off-guard".</p>
+    <p>Ataques que são defendidos pela sua Arma vão testar a Durabilidade dela. Além disso, é comum que, caso seu
+        oponente seja fisicamente mais forte que você, sua Stamina sofra dano como consequência de não suportar defender
+        um ataque muito pesado.</p>
+    <hr>
+    <h3 id="6.4">Wearing Armor</h3>
+    <p> Armaduras costumam te oferecer Resistência e te protegem contra ferimentos pelo custo de sacrificar mobilidade
+        (na maioria das vezes).</p>
+    <hr>
+    <h2 id="7"><u>7: Tests & Conflict</u></h2>
+    <p>Como o nome sugere, um "Test" vai testar as habilidades do seu personagem. Tests podem ter sucesso ou podem
+        falhar.</p>
+    <p>Quando um Test depende do resultado do Test de um adversário, isso se torna um "Conflict". O vitorioso em um
+        Conflict é aquele que tiver um maior resultado, basicamente.</p>
+    <p>Todo Test pede por Modifiers, que vão ser adicionados ao seu dado para modificar o resultado final do seu Teste.
+    </p>
+    <img src="css/imgs/Img12.jpg" id="img12">
+    <hr>
+    <h3 id="7.1">Dices</h3>
+    <p><span class="modifier-18px"><b>Roll:</b></span><span class="modifier-small"> 1d12 (se um dado diferente não for
+            especificado).</span></p>
+    <p><span class="modifier-18px"><b>Critical Hit:</b></span><span class="modifier-small"> Obtidos quando você alcança
+            o número máximo que pode ser tirado no dado.<br><br>
+            Critical Hits vão conceder um acréscimo de um terço do resultado do Dice no Teste (arredondado pra baixo).
+            Ou seja, se você rodou um 1d12, esse teste receberá um +4.</span></p>
+    <p><span class="modifier-18px"><b>Critical Error:</b></span><span class="modifier-small"> Obtidos quando você
+            alcança o número mínimo que pode ser tirado no dado.<br><br>
+            Funciona da mesma forma que o Critical Hit, mas o completo oposto.</span></p>
+    <p><span class="modifier-18px"><b>Difficulty:</b></span><span class="modifier-small"> As vezes você não terá um
+            adversário direto no dado; o conflito não será entre você e um adversário, e você estará sozinho para jogar
+            seu dado. Mas como você saberá que venceu esse teste se não há um oponente? É pra isso que o conceito de
+            "Difficulty" existe.<br><br>
+            Difficulty vai ser basicamente um número pré-determinado pelo seu Mestre ou pelo sistema que você deve
+            empatar ou ultrapassar para "vencer."<br><br>
+            Exemplo: Você quer fazer um bolo de morango. Seu mestre determina que essa não é uma tarefa tão dificil; se
+            você tiver um livro de culinária em mãos, só vai precisar tirar um 6. Caso contrário, já que seu personagem
+            não tem um conhecimento prévio em culinária, precisará tirar um 15. Essa é a dificuldade.</span></p>
+    <hr>
+    <h3 id="7.2">Rolling Actions</h3>
+    <p> Pra não roubar o espaço da sessão de combate, aqui nós vamos ser objetivos e focarmos na parte básica de como as
+        Ações funcionam.</p>
+    <p><span class="modifier-18px"><b>Choosing a Action:</b></span><span class="modifier-small"> Dentro do seu Turno,
+            você vai ter diversas ações para poder escolher. Assim que decidir qual ação quer jogar, você vai precisar
+            de um alvo. Esse alvo deve ser um outro jogador, que 99% das vezes vai ser um oponente.</span></p>
+    <p><span class="modifier-small">A Ação pedirá um Test seu e do seu oponente. Isso significa que voces entrarão em
+            Conflict, pois o resultado de um será relevante para o outro.<br><br>
+            Se chegar á um ponto onde uma ação não peça um teste do seu adversário, como é o caso padrão de quando você
+            for causar dano, isso significa que não há um teste adversário. O sucesso da ação é determinado unicamente
+            pelo seu Test.
+            <p> O exemplo para por aqui. Ele foi breve apenas para que se possa visualizar como os Tests são rodados,
+                mas será revisitado com os detalhes que realmente montam o combate no capítulo 9. Além disso, no próximo
+                capítulo, entenderemos como as nossas vitórias e derrotas nesses Tests vão ser aproveitadas.</p>
+            <hr>
+            <h2 id="8">8: Advantages</h2>
+            <p> Advantages são um dos pilares fundamentais do combate do jogo. A maior parte das ações possui um alvo ou
+                um adversário, e a Advantage determina o grau de sucesso que você obteve em bater seu adversário naquele
+                teste.</p>
+            <p> Vamos supor que você quis perfurar o peito do seu adversário na sua ação. Se você vencer seu teste de
+                Acerto, isso significaria que você o perfurou, mas supondo que seu resultado foi 18 e o do adversário
+                foi 17, vencer seu adversário por uma mera diferença de 1 não resultará em um pulmão perfurado pois é
+                uma vitória muito pequena que não deveria coincidir com um resultado tão decisivo.</p>
+            <p>Essa diferença entre seu resultado vitorioso e o resultado do adversário é chamado de "Advantage", e o
+                oposto (o resultado negativo do seu oponente e o seu resultado) é chamado de "Failure", mas
+                geralmente só lemos a Advantage.</p>
+            <p>Baseado na diferença do resultado, as Advantages são separadas em 4 Graus;</p>
+            <p><span class="modifier-18px"><b>0:</b></span><span class="modifier-small"> Zero Advantage.</span></p>
+            <p><span class="modifier-18px"><b>1 ~ 4:</b></span><span class="modifier-small"> Small Advantage.</span>
+            </p>
+            <p><span class="modifier-18px"><b>5 ~ 9:</b></span><span class="modifier-small"> Medium
+                    Advantage.</span></p>
+            <p><span class="modifier-18px"><b>10 ~ 12:</b></span><span class="modifier-small"> High Advantage.</span>
+            </p>
+            <p><span class="modifier-18px"><b>13+:</b></span><span class="modifier-small"> Critical Advantage.</span>
+            </p>
+            <p> Esses Graus são usados para obter os elementos que citaremos á seguir.</p>
+            <hr>
+            <h3 id="8.1">Classes</h3>
+            <p> Ao obter uma Advantage, a Skill poderá ser beneficiada com algum bônus. Existem bônus que afetam todos
+                os Attacks, como no caso da Hit e Damage Table, e existem bônus que são únicos para tal Skill.</p>
+            <p> As Advantages possuem nomes próprios e "Classes". Se uma Advantage te pedir para que você obtenha uma
+                Medium Advantage, por exemplo, mas também tiver uma versão com o mesmo nome que peça uma High Advantage,
+                isso significa que essa Advantage possui uma Class 1 e Class 2, respectivamente, e a Class mais alta
+                será a utilizada.</p>
+            <p> Classes não acumulam os seus bônus. </p>
+            <hr>
+            <h3 id="8.2">Maneuvers</h3>
+            <p> Maneuvers são Skills que podem ser usadas caso você tenha feito os requerimentos dela na última ação ou aplicando uma condição no adversário. Ás vezes você possui a oportunidade específica para usar uma Maneuver, mas é opcional.</p>
+            <p> Ás vezes uma Maneuver vai ser algo mais figurativo do quê uma real "ação". Socar alguém é uma ação, e existe uma Maneuver de jogar a pessoa pra longe com esse soco caso ele tenha tido contato. Na lógica o soco jogar a pessoa pra longe deveria fazer parte da ação e não uma nova ação separada, mas a Maneuver existe como uma forma criativa de te dar a opção, então tem momentos onde essa "incoerência" acontece.</p>
+            <p> Exemplo: Você agarrou o braço de alguém (Action) e agora quer torcer (Action do tipo Maneuver). Você atacou alguém e obteve contato (Hit) e quer ter a intenção de lançar essa pessoa pra longe com o ataque (Action do tipo Maneuver).</p>
+            <hr>
+            <h3 id="8.3">Disadvantages</h3>
+            <p> As Disadvantages funcionam como Advantages, mas ao invés de um personagem receber elas e ser bonificado,
+                o personagem "toma" uma Disadvantage através de requerimentos como tomar muito dano, tomar tanto de
+                acerto em tal local do corpo, etc.</p>
+            <hr>
+            <h2 id="9">9: Combat</h2>
+            <p> Finalmente, chegamos na sessão que vai pegar a maior parte do que foi apresentado até agora e explicar
+                onde cada uma dessas coisas se encaixam.</p>
+            <p> Primeiro, antes do combate, existe um cenário montado. Um está buscando o outro no meio de uma floresta?
+                Um está atacando o outro no meio da sua frase de impacto? Ou os dois estão se cumprimentando e iniciando
+                um combate honrado? </p>
+            <p> No mais normal dos casos, que é onde dois ou mais jogadores podem se ver e um já interpretou a vontade
+                de dar início ao combate, todos presentes rodam Initiative x. Initiative.</p>
+            <p> <i><span class="modifier-small">Initiative? Não encontrei esse modificador aqui...</span></i></p>
+            <p> Lembra na sessão 7, quando comentamos que existem alguns nomes que nós chamamos de "Test Modifier" e que
+                eles são declarados na hora da ação? Aqui nós estamos falando da ação de iniciar o combate, e a
+                Initiative [Speed x 0.5] é um modificador desse teste quê, como mencionado ao lado, recebe Speed x 0.5
+                como valor.</p>
+            <p> <i><span class="modifier-small">Porquê não Speed x 0.5 diretamente?</span></i></p>
+            <p> Vários Test Modifiers são usados para diferentes ocasiões, como é o caso da Initiative. Então pra
+                começar o combate, rodamos;</p>
+            <p><span class="modifier-18px"><b>Início de Combate:</b></span><span class="modifier-small"> 1d12 +
+                    Initiative.</span></p>
+            <p> Nós tiramos 10 e o oponente tirou 7. Vencemos, e agora o jogo está no nosso Turno.</p>
+            <img src="css/imgs/Gojo10.jpg" id="img13">
+            <hr>
+            <h3 id="9.1">Turns</h3>
+            <p>Aquele que detém o Turno é o "jogador da vez", que poderá agir através de Skills do tipo "Action" pelo
+                custo de Action Points.</p>
+            <p>Todo Personagem inicia seu Turn com 5 Action Points, e seu Turn se encerrará automaticamente ao chegar
+                aos 0 Points. </p>
+            <p> Após seu Turno ser encerrado, o próximo na ordem jogará. Essa ordem é determinada por quem tirou os
+                melhores resultados de Initiative no início, e após todos jogarem, uma "Row" se encerra.</p>
+            <p>Seus Action Points são resetados para 3 no momento que uma Row inicia. Isso significa que, caso você
+                obtenha mais Action Points de alguma forma durante o turno, você só poderia usar eles deliberadamente
+                caso seu turno fosse o último, uma tática arriscada já que tem como perder Action Points.</p>
+            <p>Alguns Vilões ou personagens que estejam lutando contra múltiplos oponentes podem querer jogar no último
+                turno por conta disso.</p>
+            <p> Quando 5 "Rows" se encerram, nós temos um "Shift". O Shift costuma ser usado para um Recovery Turn e
+                também como referência para que alguns eventos ocorram no meio do combate como a chegada de novos
+                personagens ou algo do tipo.</p>
+            <p></p>
+            <hr>
+            <h3 id="9.2">Choosing a Action</h3>
+            <p> Estamos no nosso Turn, então precisamos escolher uma Action. Por motivos de organização, Actions e
+                Reactions terão a sua sessão própria onde mostraremos a lista de ações que você pode escolher, mas vamos
+                escolher uma bem básica e atacar nosso oponente com um "Hit".</p>
+            <p> Hit custa 1 Action Point e é uma Action da Class Attack.</p>
+            <p> Agora que escolhemos uma Action e já nos decidimos, então nós á declaramos (não pode voltar atrás) e
+                agora é hora do oponente escolher uma Reaction.</p>
+            <p> O oponente decidiu que a sua melhor chance de defesa era usando um "Dodge", que é uma Common Skill da
+                Class Dodge (eu mencionei que algumas Skills possuiam o mesmo nome).</p>
+            <hr>
+            <h3 id="9.4">Attack and Defense</h3>
+            <p> Attack e Defense são os testes primários para determinar se um personagem foi acertado ou não. Eles são
+                sempre modificados pela Reação escolhida, e o "Attack" e a "Defense" são modificados por Test Modifiers
+                específicos.</p>
+            <p> No caso de Dodge, ela pedirá que o; </p>
+            <p>Atacante jogue Hit: 1d12 + (Skill Speed x 0.5 + Technique x 0.3).</p>
+            <p>Defensor jogue Evasion: 1d12 + (Rfx x 0.5 + Spd x 0.3).</p>
+            <p>Hit é o Attack e a Evasion é a Defense desse Conflict.</p>
+            <p>O Atacante tirou um Resultado de 18, enquanto o Defensor teve um Resultado de 14. Há uma diferença de 4,
+                então isso significa que ele obteve uma Small Advantage em cima da sua Defense, o quê permite que ele
+                rode seu Damage.</p>
+            <hr>
+            <h3 id="9.5">Damaging your Opponent</h3>
+            <p>O Atacante possui 5 de Physical Strength e 3 de Technique, e Hit é uma Skill de Concussão cujo a Skill
+                Damage é 0.5 da sua Strength e a Skill Power é 1. Então ele possui +2 de Skill Damage, some pela
+                Physical Strength pra obter um +7, multiplique pela Skill Power para se manter no +7 e por fim
+                multiplique pelo Direct Hit da Attack Table, ou seja, x1, e continue no 7.</p>
+            <p>Dodge não rola dados para reduzir dano, mas todo ataque tem seu dano reduzido naturalmente, então nós
+                jogamos;</p>
+            <p>Atacante joga Damage: 7.</p>
+            <p>Defensor tem 3 de Endurance e 1 de Armor Class, então reduz o dano em 3.</p>
+            <p>O Atacante causou 4 de Dano.</p>
+            <p> As contas são chatas, sim, mas a automatização toma conta disso. Você não precisa fazer conta manual
+                nenhuma, então se preocupe mais nas suas decisões e em só entender as rolagens por cima.</p>
+            <p> Certo, essa sessão nos ensinou o funcionamento do combate. Entendemos a hora que podemos agir, como
+                podemos agir, reagir e causar dano, além de entender as peculiaridades de uma ação e de uma reação, e
+                agora listaremos exatamente todas as ações que você pode escolher e todos os fatores que são aplicados
+                para controlar o combate.</p>
+            <img src="css/imgs/Combat3.jpg" id="img15">
+            <hr>
+            <h2 id="10">10: Battle Mechanics</h2>
+            <p> No capítulo passado nós ensinamos como o combate funciona, e nele é possível perceber que existem
+                diversos detalhes que não aprendemos ainda, como a menção de um Recovery Turn e de uma redução de dano.
+            </p>
+            <p> Essas são mecânicas exclusivas do combate, não estão atreladas á um personagem específico ou á qualquer
+                ação, e não parecia fazer muito sentido apresentá-las antes de apresentar o combate.</p>
+            <hr>
+            <h3 id="10.1">Recovery Turns</h3>
+            <p> Em todo Shift, um Recovery Turn acontece. Recovery Turns vão restaurar levemente as suas energias em
+                valores de; 10% do HP Atual, 5% do MP Máximo, 5% do SP Máximo.</p>
+            <p> Recovery Turns podem ser feitos com mais frequência através de certas Skills. </p>
+            <p> Recovery Turns possuem três sub-classes; Health Regeneration Turn, Mana Regeneration Turn, Stamina
+                Regeneration Turn. Eles só são relevantes e lidos se uma Skill trouxer eles á tona, e representam a
+                habilidade de recuperar um desses três fatores mais rápido.</p>
+            <p><span class="modifier-18px"><b>Fatigue:</b></span><span class="modifier-small"> Um personagem vai sentir
+                    repercussões no seu estado físico se a sua Stamina cair para uma certa quantia.</span></p>
+            <p><span class="modifier-18px"><b>50% de Stamina:</b></span><span class="modifier-small"> Fatigue [Class 1].
+                    -1d4 em Tests de Speed e Physical Strength.</span></p>
+            <p><span class="modifier-18px"><b>25% de Stamina:</b></span><span class="modifier-small"> Fatigue [Class 2].
+                    -1d6 em Tests de Speed, Physical Strength e Reflex.</span></p>
+            <p><span class="modifier-18px"><b>10% de Stamina:</b></span><span class="modifier-small"> Fatigue [Class 3].
+                    -2d4 em Tests de Speed, Physical Strength, Reflex e Technique.</span></p>
+            <p><span class="modifier-18px"><b>0% de Stamina:</b></span><span class="modifier-small"> Fatigue [Class 4].
+                    Não consegue executar ações ou reações.</span></p>
+            <p>A Fatigue só é recuperada quando o personagem alcança 100% da sua Stamina máxima.</p>
+            <hr>
+            <h3 id="10.2">Attack Table</h3>
+            <p> Ao obter sucesso em Attack vs. Defense, há uma Lead comum que irá multiplicar o seu Damage. Essa Lead se
+                chama Attack Table e ela não se diferencia em nada de outras Leads, mas como ela é um elemento essencial
+                de todo ataque, nós estamos lendo ela aqui.</p>
+            <p>Em ordem de leitura;</p>
+            <p>Zero Advantage: É o requerimento pra que essa Lead seja aplicada.</p>
+            <p>Attack Table: É o nome principal da Lead.</p>
+            <p>Grazing / Direct / Heavy / Severe Hit: É o nome que foi dado á essa Class da Lead. Todos esses Hits fazem
+                parte da Attack Table, e dependendo da Class que você obter, você vai estar obtendo uma Class específica
+                que vai ser identificada por este nome.</p>
+            <p>Não é obrigatório que as Classes de Leads tenham um Nome secundário, ás vezes elas vão ser referenciadas
+                como "Nome da Lead [Class ?].".</p>
+            <p><span class="modifier-18px"><b>Attack ; Zero Advantage:</b></span><span class="modifier-small"> Attack
+                    Table, Grazing Hit ; 0.5x Damage [Class 1].</span></p>
+            <p><span class="modifier-18px"><b>Attack ; Small Advantage:</b></span><span class="modifier-small"> Attack
+                    Table, Direct Hit ; 1x Damage [Class 2].</span></p>
+            <p><span class="modifier-18px"><b>Attack ; Medium ou High Advantage:</b></span><span class="modifier-small">
+                    Attack Table, Heavy Hit ; 1.25x Damage [Class 3].</span></p>
+            <p><span class="modifier-18px"><b>Attack ; Critical Advantage:</b></span><span class="modifier-small">
+                    Attack Table, Severe Hit ; 1.5x Damage [Class 4].</span></p>
+            <hr>
+            <h3 id="10.3">Damage Table</h3>
+            <p> Mesmo conceito da Attack Table; a Damage Table é uma Lead que funciona através do Damage que foi
+                causado, mas diferente da Attack Table, ela não concede bônus ao ataque e não é lida por um grau de
+                Advantage, mas por uma quantia de dano causada.</p>
+            <p> A Damage Table só costuma ser lida por Wounds. </p>
+            <p><span class="modifier-18px"><b>Damage ; 10% do HP Atual:</b></span><span class="modifier-small"> Damage
+                    Table,
+                    Minor Damage [Class 1].</span></p>
+            <p><span class="modifier-18px"><b>Damage ; 20% do HP Atual:</b></span><span class="modifier-small"> Damage
+                    Table,
+                    Medium Damage [Class 2].</span></p>
+            <p><span class="modifier-18px"><b>Damage ; 33% do HP Atual:</b></span><span class="modifier-small"> Damage
+                    Table,
+                    Major Damage [Class 3].</span></p>
+            <p><span class="modifier-18px"><b>Damage ; 51% do HP Atual:</b></span><span class="modifier-small"> Damage
+                    Table,
+                    Critical Damage [Class 4].</span></p>
+            <hr>
+            <h3 id="10.4">Damage Reduction</h3>
+            <p> Todo Damage recebido é reduzido por (Endurance + Tenacity) * Armor Class. </p>
+            <p> Algumas Wounds ignoram a redução de dano da Endurance para que a Wound seja causada. O Damage em si não
+                é reduzido neste caso, mas a sua redução não é contada na leitura do quê a Wound precisa para ser
+                causada. </p>
+            <p> Tenacity também é um modificador que reduz o dano recebido, mas este não é um modificador "comum" (não
+                está nos atributos, precisa ser obtido em Skills ou Weapons). As Wounds que ignorarem Endurance não vão
+                ignorar Tenacity. </p>
+            <p> Tenacity e Endurance nunca podem ser reduzidas para valores negativos (-1, -2...).</p>
+            <hr>
+            <h3 id="10.5">Aim</h3>
+            <p> Aim é a zona do corpo do oponente onde você vai atacar. Alguns Attacks possuem uma Aim própria que não
+                pode ser alterada, mas boa parte dos Attacks vai pedir para que você determine uma Aim pra ele.</p>
+            <p> Entre as Aims possíveis, temos;</p>
+            <img src="css/imgs/Mental6.png" id="img16">
+            <p><span class="modifier-18px"><b>Head, Arms, Legs, Body.</b></span></p>
+            <p> As Penalidades são aplicadas através do Sistema de Wounds. </p>
+            <p> Sofrer um Attack nas suas Legs ou nos seus Arms transforma o Hit em um "Grazing Hit".</p>
+            <hr>
+            <h3 id="10.6">Mental Warfare</h3>
+            <p> Lutas não são travadas só no corpo a corpo. Através da sua Astúcia, você pode montar uma estratégia ou
+                usar de artimanhas para atingir um ataque definitivo.</p>
+            <p><span class="modifier-18px"><b>Tricks:</b></span><span class="modifier-small"> Tricks são uma das formas
+                    de usar sua Astúcia contra seu oponente. Tricks são acessados através da Skill "Trick", que baseado
+                    na sua Advantage, te permite usar certos Maneuvers.</span></p>
+            <p><span class="modifier-18px"><b>Tactics:</b></span><span class="modifier-small"> Tactics são obtidas
+                    diretamente pela Skill e diferem de Tricks.</span></p>
+            <p>Elas não são impostas sob o seu oponente, mas sim concedidas como uma condição benéfica ao seu
+                personagem caso ele cumpra alguns requerimentos da Tática.</p>
+            <p><i><span class="modifier-small">Diferente de Tricks, as Tactics não são "Mind Games". As Tactics são uma
+                        preparação, uma estratégia montada que sua mente e seu corpo estarão programados para executar,
+                        como se colocar na defensiva ou até algo mais físico como gastar mais energia para se colocar em
+                        movimento constante e se mover mais rápido.</span></i></p>
+            <hr>
+            <h2 id="11">11: Common Skills </h2>
+            <p> Vamos listar todas as Common Skills nessa sessão, além das Maneuvers e Leads que elas oferecem. </p>
+            <p> Tudo o quê uma Skill concede é individual dela mesma, o quê significa que nós não teremos Leads que são
+                concedidas por mecânicas de batalha (como as listadas acima) ou Leads que são concedidas pelo Damage
+                Type da Skill, pois isso não pertence unicamente á ela, e sim á um fator que engloba todas as Skills
+                daquele Type. </p>
+            <hr>
+            <h3 id="11.1">Common Actions</h3>
+            <div class="skill-container">
+                <div class="skill">
+                    <p class="header-skill">Hit</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Type: Concussion</p>
+                    <p class="modifiers">Class: Attack, Martial</p>
+                    <p class="modifiers">Damage, Power: 0.5 Strength, 1</p>
+                    <p class="info">Effects: Não pode dar Aim em Legs.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Kick</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Type: Concussion</p>
+                    <p class="modifiers">Class: Attack, Martial</p>
+                    <p class="modifiers">Damage, Power: 0.5 Strength + 1, 1.2</p>
+                    <p class="modifiers">Attack: -1</p>
+                    <p class="info">Effects: -</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Slash</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Type: Slashing</p>
+                    <p class="modifiers">Class: Attack, Martial</p>
+                    <p class="modifiers">Damage: Weapon, Weapon</p>
+                    <p class="info">Effects: -</p>
+                </div>
+                <div class="skill">
+                    <img src="css/imgs/Punchs.png" class="img-skill-contained">
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Stab</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Type: Penetration</p>
+                    <p class="modifiers">Class: Attack, Martial</p>
+                    <p class="modifiers">Damage: Weapon + 1, Weapon + 0.2</p>
+                    <p class="info">Effects: -</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Shoot</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Type: Penetration</p>
+                    <p class="modifiers">Class: Attack, Accuracy</p>
+                    <p class="modifiers">Damage: Weapon</p>
+                    <p class="info">Effects: -</p>
+                    <p class="mnv">Maneuvers</p>
+                    <p class="info">-</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Throw</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Type: Weapon</p>
+                    <p class="modifiers">Class: Attack, Accuracy</p>
+                    <p class="modifiers">Damage: Weapon</p>
+                    <p class="info">Effects: -</p>
+                    <p class="mnv">Maneuvers</p>
+                    <p class="info">-</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Grab</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Type: Neutral</p>
+                    <p class="modifiers">Class: Attack, Martial</p>
+                    <p class="modifiers">Damage: 0</p>
+                    <p class="info">Effects: Aplica "Grabbed".</p>
+                </div>
+                <div class="skill">
+                    <img src="css/imgs/Grab1.png" class="img-skill-non-contained">
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Touch</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Type: Neutral</p>
+                    <p class="modifiers">Class: Attack, Martial</p>
+                    <p class="modifiers">Damage: 0</p>
+                    <p class="info">Effects: Aplica "Grabbed".</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Shove</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Type: Neutral</p>
+                    <p class="modifiers">Class: Attack, Martial</p>
+                    <p class="modifiers">Damage: 0</p>
+                    <p class="info">Effects: Aplica "Grabbed".</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Trick</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Class: Attack, Mental.</p>
+                    <p class="modifiers">Attack: 1d12 + Wits.</p>
+                    <p class="modifiers">Defense: 1d12 + Wits.</p>
+                    <p class="info">Effects: ganha 'trick point'?</p>
+                </div>
+            </div>
+            <hr>
+            <h3 id="11.2">Common Reactions</h3>
+            <div class="skill-container">
+                <div class="skill">
+                    <p class="header-skill">Block</p>
+                    <p class="modifiers">Action Cost: 0</p>
+                    <p class="modifiers">Type: Block</p>
+                    <p class="modifiers">Test: 1d12 + Guard + 2 x. 1d12 + Breakthrough</p>
+                    <p class="info">Effect: Aplique "Blocked" á Action.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill"></p>
+                </div>
+                <div class="skill">
+                    <img src="css/imgs/Block.png" class="img-skill-non-contained">
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Dodge</p>
+                    <p class="modifiers">Action Cost: 0</p>
+                    <p class="modifiers">Type: Dodge</p>
+                    <p class="modifiers">Test: 1d12 + Evasion x. 1d12 + Precision.</p>
+                    <p class="info">Effect: Evita o Attack.</p>
+                    <p class="mnv">Advantages</p>
+                    <p class="info"> Defense, Med. Adv: Recebe 1 Opportunity Maneuver.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill"></p>
+                </div>
+                <div class="skill">
+                    <img src="css/imgs/Dodge.jpg" class="img-skill-contained">
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Counter</p>
+                    <p class="modifiers">Action Cost: 1</p>
+                    <p class="modifiers">Type: Block</p>
+                    <p class="modifiers">Test: 1d12 + Response - 1 x. 1d12 + Initiative</p>
+                    <p class="info">Effects: Evita o Attack. Recebe 1 Opportunity Attack.</p>
+                    <p class="mnv">Advantages</p>
+                    <p class="info">Defense, Med. Adv; Counter Attack [Class 1]: A Opportunity Attack recebe Hit +1.</p>
+                    <p class="info">Defense, Hg. Adv, Counter Attack [Class 2]: A Opportunity Attack não pode ser
+                        Bloqueada.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill"></p>
+                </div>
+                <div class="skill">
+                    <img src="css/imgs/CutDown2.jpg" class="img-skill-contained">
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Parry</p>
+                    <p class="modifiers">Action Cost: 0</p>
+                    <p class="modifiers">Type: Parry</p>
+                    <p class="modifiers">Test: 1d12 + Guard + 1 x. 1d12 + Breakthrough</p>
+                    <p class="info">Effect: Aplica "Parried" á Action.</p>
+                    <p class="mnv">Advantages</p>
+                    <p class="info"> Defense, Med. Adv: Recebe 1 Opportunity Maneuver.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill"></p>
+                </div>
+                <div class="skill">
+                    <img src="css/imgs/Parry2.png" class="img-skill-contained">
+                </div>
+            </div>
+            <hr>
+            <h3 id="11.3">Maneuvers</h3>
+            <div class="skill-container">
+                <div class="skill">
+                    <p class="header-skill">Chase</p>
+                    <p class="modifiers">Type: Movement.</p>
+                    <p class="modifiers">Requires: Impact.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Launch Back</p>
+                    <p class="modifiers">Type: Movement.</p>
+                    <p class="modifiers">Requires: Shock.</p>
+                    <p class="info">Effects: causa impact, shock é uma wound de concussion que vc pode usar pra causar.
+                        REWORK: não precisa de wound de concussion, só precisa ter conseguido um hit. reembolsa action
+                        se tiver dado certo, chance de dar stun baseado em technique contra str</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Launch Up</p>
+                    <p class="modifiers">Type: Movement.</p>
+                    <p class="modifiers">Requires: Shock.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Launch Down</p>
+                    <p class="modifiers">Type: Movement.</p>
+                    <p class="modifiers">Requires: Shock.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Grab Cloth</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: Small Advantage em Grab.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Grab Arm</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: Small Advantage em Grab.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Grab Torso</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: Medium Advantage em Grab.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Grab Hand</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: Medium Advantage em Grab.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Grab Leg</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: Medium Advantage em Grab.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Grab Face</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: High Advantage em Grab.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Grab Wrist</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: High Advantage em Grab.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Grab Throat</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: Critical Advantage em Grab.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Hold</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: Grabbed.</p>
+                    <p class="info">Effects: qqr um dos outros grabs mas com duas maos.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Hurl</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: Grabbed.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Twist</p>
+                    <p class="modifiers">Type: Action.</p>
+                    <p class="modifiers">Requires: Grabbed.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Rebound</p>
+                    <p class="modifiers">Type: Reaction.</p>
+                    <p class="modifiers">Requires: Parried.</p>
+                    <p class="info">Effects: knockback sword, abaixar a espada p pdr atacar.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Disarm</p>
+                    <p class="modifiers">Type: Action, Reaction.</p>
+                    <p class="modifiers">Requires: Trick.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Momentum</p>
+                    <p class="modifiers">Type: Action, Reaction.</p>
+                    <p class="modifiers">Requires: Opportunity Maneuver / Attack.</p>
+                    <p class="info">Effects: step pra qlqr lado.</p>
+                </div>
+            </div>
+            <hr>
+            <h3 id="11.4">Enhancements</h3>
+            <div class="skill-container">
+                <div class="skill">
+                    <p class="header-skill">Fast Attack</p>
+                    <p class="modifiers">Action Cost: 1.</p>
+                    <p class="modifiers">Type: Martial.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Heavy Attack</p>
+                    <p class="modifiers">Action Cost: 1.</p>
+                    <p class="modifiers">Type: Martial.</p>
+                    <p class="info">Effects: causa impact, shock é uma wound de concussion que vc pode usar pra causar
+                        impact.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Hand Block</p>
+                    <p class="modifiers">Action Cost: 1.</p>
+                    <p class="modifiers">Type: Martial.</p>
+                    <p class="info">Effects: causa impact, shock é uma wound de concussion que vc pode usar pra causar
+                        impact.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Jump</p>
+                    <p class="modifiers">Action Cost: 1.</p>
+                    <p class="modifiers">Type: Martial.</p>
+                    <p class="info">Effects: causa impact, shock é uma wound de concussion que vc pode usar pra causar
+                        impact.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Roll</p>
+                    <p class="modifiers">Action Cost: 1.</p>
+                    <p class="modifiers">Type: Martial.</p>
+                    <p class="info">Effects: causa impact, shock é uma wound de concussion que vc pode usar pra causar
+                        impact.</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Uncanny Dodge</p>
+                    <p class="modifiers">Action Cost: 1.</p>
+                    <p class="modifiers">Type: Martial.</p>
+                    <p class="info">Effects: causa impact, shock é uma wound de concussion que vc pode usar pra causar
+                        impact.</p>
+                </div>
+            </div>
+            <hr>
+            <h3 id="11.5">Tactical Actions</h3>
+            <div class="skill-container">
+                <div class="skill">
+                    <p class="header-skill">Raise Guard</p>
+                    <p class="modifiers">Action Cost: 1.</p>
+                    <p class="modifiers">Type: Martial.</p>
+                    <p class="info">Effects: Defense +1 [1 Row].</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Anticipate</p>
+                    <p class="modifiers">Action Cost: 1.</p>
+                    <p class="modifiers">Type: Martial.</p>
+                    <p class="info">Effects: eff de predict (nome predict msm).</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Dash</p>
+                    <p class="modifiers">Action Cost: 1.</p>
+                    <p class="modifiers">Type: Martial.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+                <div class="skill">
+                    <p class="header-skill">Trick</p>
+                    <p class="modifiers">Action Cost: 1.</p>
+                    <p class="modifiers">Test: Martial.</p>
+                    <p class="info">Effects: .</p>
+                </div>
+            </div>
+            <hr>
+            <h2 id="12">12: Movement</h2>
+            <p>Movement é uma das partes mais vitais do combate. Ela determina o seu posicionamento em campo e o
+                controle de distância entre os personagens.</p>
+            <h3 id="12.1">Moving</h3>
+            <hr>
+            <h3 id="12.2">Attacking while Moving</h3>
+            <hr>
+            <h3 id="12.3">Reacting to Movement</h3>
+            <hr>
+            <h3 id="12.4">Chasing</h3>
+            <hr>
+            <h2 id="13">13: Field</h2>
+            <h3 id="13.1">Line of Sight</h3>
+            <hr>
+            <h3 id="13.2">Stealth</h3>
+            <hr>
+            <h3 id="13.3">Distance</h3>
+            <p><span class="modifier-18px"><b>0m:</b></span><span class="modifier-small"> Very Close [VC].</span></p>
+            <p><span class="modifier-18px"><b>1m:</b></span><span class="modifier-small"> Close [C].</span></p>
+            <p><span class="modifier-18px"><b>2 ~ 3m:</b></span><span class="modifier-small"> Midrange [M].</span></p>
+            <p><span class="modifier-18px"><b>4 ~ 6m:</b></span><span class="modifier-small"> Far [F].</span></p>
+            <p><span class="modifier-18px"><b>7 ~ 10m:</b></span><span class="modifier-small"> Very Far [F].</span></p>
+            <p><span class="modifier-18px"><b>11m+:</b></span><span class="modifier-small"> Out of Sight [OS].</span></p>
+            <hr>
+            <h2 id="14">14: Disadvantages</h2>
+            <hr>
+            <h3 id="14.1">Wounds</h3>
+            <hr>
+            <h3 id="14.2">Cold</h3>
+            <hr>
+            <h3 id="14.3">Concussion</h3>
+            <hr>
+            <h3 id="14.4">Electric</h3>
+            <hr>
+            <h3 id="14.5">Fear</h3>
+            <hr>
+            <h3 id="14.6">Heat</h3>
+            <hr>
+            <h3 id="14.7">Light</h3>
+            <hr>
+            <h3 id="14.8">Penetration</h3>
+            <hr>
+            <h3 id="14.9">Slashing</h3>
+            <hr>
+            <h2 id="15">15: Effects</h2>
+            <h3 id="15.1">Conditions</h3>
+            <p>Pressured = faz perder ap se a defense der errado</p>
+            <p>Stun = Can't act</p>
+            <p>Flank = hit +1 aumenta result em 25%</p>
+            <p>Blindside = hit +2 aumenta result em 50%</p>
+            <p>Shock = reembolsa ap gasto na açao</p>
+            <p>Collision = toma dano verdadeiro baseado na str do personagem</p>
+            <p>Dazed</p>
+            <p>Staggered</p>
+            <p>Bleeding = tem stacks, a cada 3 stacks aumenta de nivel</p>
+            <p>Flying</p>
+            <p>Kneeling</p>
+            <p>Prone</p>
+            <p>Airbone</p>
+            <p>Footwork = lance de tar na ponta dos pes</p>
+            <p>Backpedalling</p>
+            <p>Blind</p>
+            <hr>
+            <h3 id="15.2">Effects</h3>
+            <p>estatura grande = 2~3m
+                enorme = 3~5m
+                imensa = 6~10m
+                gigante = 11~25m
+                colossal = 26m+
+
+                Unparriable
+                Unblockable
+                Undodgeable
+
+                Blocked: +0.5PS de reduçao de dano, leva o ataque pros arms. se o golpe for nas legs ou no body, não
+                redireciona. Se a Aim do Attack for Body, transforme ela para "Heavy Hit".
+                Grabbed:
+                Parried:
+
+            </p>
+            <hr>
+            <h3 id="15.3">Passives</h3>
+            <hr>
+            <h3 id="15.4">Properties</h3>
+            <hr>
+            <h2 id="16">16: Perks</h2>
+            <h3 id="16.1">List</h3>
+            <p><span class="modifier-18px"><b>Adaptability:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Cold Blood:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Dirty Fighter / Brawler?:</b></span><span class="modifier-small"> headbutt, bite, spit on face.</span></p>
+            <p><span class="modifier-18px"><b>Featherfoot:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Hitman:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Iron Fist:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Martial Artist:</b></span><span class="modifier-small"> pd pegar 6 skills da tree de artes marciais (tipo battle maneuvers). pd pegar qnts vezes quiser esse perk.</span></p>
+            <p><span class="modifier-18px"><b>Merciless:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Nimble:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Quick Draw:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Quick Feet:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Reckless:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Sheer Force:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Sniper:</b></span><span class="modifier-small"> .</span></p>
+            <p><span class="modifier-18px"><b>Soulful:</b></span><span class="modifier-small"> pd usar fury. +spirit</span></p>
+            <p><span class="modifier-18px"><b>Steel Spirit:</b></span><span class="modifier-small"> +Spirit * 1 de HP. +1 de Endurance.</span></p>
+            <p><span class="modifier-18px"><b>Sturdy:</b></span><span class="modifier-small"> se a endurance for maior q a skill damage, reduz mais dano.</span></p>
+            <p><span class="modifier-18px"><b>?:</b></span><span class="modifier-small"> Dodge +1 com algumas condições negativas.</span></p>
+            <hr>
+            <h2 id="17">17: Skill Trees</h2>
+            <p></p>
+            <hr>
+            <h3 id="17.1">Martial Arts</h3>
+            <p> Maneuver pode grabar perna com sua perna, se vencer roll por medium adv pode usar isso daqui como açao de oport</p>
+            <p> Maneuver arm lock, pode usar com flanco ou se tiver conseguido counterar por md adv. Tb libera headlock q precisa de backside</p>
+            <p> Shoulder block, bloqueio mais diff e mais pik</p>
+            <p> Shoulder bash/tackle?</p>
+            <p> Ippon/shoulder throw</p>
+            <h3 id="17.2">Superhuman Features</h3>
+            <p></p>
+            <h2 id="18">18: Jujutsu Kaisen</h2>
+            <p></p>
+            <h3 id="18.1">Congenital Traits</h3>
+            <p>cla gojo +mp
+cla zenin +mp
+cla inumaki +mp +hp
+dezin nanami +technique base
+gordon yuta +skill points pela rika (o +mp da rika fica na tree dela)</p>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JJK RPG</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" href="css/imgs/yujiicon.jpg">
+</head>
+
+<body>
+    <div id="announce-letters">? usou ?<br><br>Gojo Kazuki tomou ? de Dano!<br><br>Gojo Kazuki tomou as Condições: ?
+    </div>
+    <div id="announce-letters2">? usou ?<br><br>Gojo Kazuki tomou ? de Dano!<br><br>Gojo Kazuki tomou as Condições: ?
+    </div>
+    <header>
+        <ul class="menu">
+            <li id="home">Home</li>
+            <li id="meupersonagem">Personagem</li>
+            <li id="logo"></li>
+            <a href="index.html">
+                <li id="mesa">Mesa</li>
+            </a>
+            <a href="sistema.html" target="_blank">
+                <li id="sistema">Sistema</li>
+            </a>
+        </ul>
+    </header>
+    <!--    <div class="cabecalho">
+        <div id="header-1"></div>
+        <div id="header-2"></div>
+    </div> -->
+    <div id="top-divisoria"></div>
+    <section>
+        <div class="vertical-container">
+            <div class="horizontal-container">
+                <div class="players-container" id="player-list">
+                    <div class="player-bar">
+                        <div class="player-img"></div>
+                        <span class="player-info">Gojo Kazuki, Lv. 17
+                        </span>
+                        <div class="details-hover"></div>
+                        <span class="hp-letras">Hp</span><span class="hp-number">100</span>
+                        <div class="hp-container">
+                            <div class="hp-bar"></div>
+                            <div class="hp-grey"></div>
+                        </div>
+                        <div class="mp-container">
+                            <div class="mp-bar"></div>
+                            <div class="mp-grey"></div>
+                        </div>
+                        <span class="mp-letras">Mp</span><span class="mp-number">100</span>
+                    </div>
+                    <div class="player-bar">
+                        <span class="player-info">Yaguchi Ryuji, Lv. 17
+                        </span>
+                        <div class="details-hover"></div>
+                        <span class="hp-letras">Hp</span><span class="hp-number">100</span>
+                        <div class="hp-container">
+                            <div class="hp-bar"></div>
+                            <div class="hp-grey"></div>
+                        </div>
+                        <div class="mp-container">
+                            <div class="mp-bar"></div>
+                            <div class="mp-grey"></div>
+                        </div>
+                        <span class="mp-letras">Mp</span><span class="mp-number">100</span>
+                    </div>
+                </div>
+                <div id="map-container">
+                    <canvas height="540" width="1186" id="map-game">
+                    </canvas>
+                    <div id="skill-container">
+                        <div id="hit" class="skill-placement attack hidden">
+                            <div class="overlay-text">Hit<br><br>Damage, Power: 0.5 * Strength, 1</div>
+                        </div>
+                        <div id="kick" class="skill-placement attack hidden">
+                            <div class="overlay-text">Hit<br><br>Damage, Power: 0.5 * Strength, 1</div></div>
+                        <div id="slash" class="skill-placement attack hidden">
+                            <div class="overlay-text">Hit<br><br>Damage, Power: 0.5 * Strength, 1</div></div>
+                        <div id="stab" class="skill-placement attack hidden">
+                            <div class="overlay-text">Hit<br><br>Damage, Power: 0.5 * Strength, 1</div></div>
+                        <div id="bash" class="skill-placement attack hidden">
+                            <div class="overlay-text">Hit<br><br>Damage, Power: 0.5 * Strength, 1</div></div>
+                        <div id="shoot" class="skill-placement attack hidden">
+                            <div class="overlay-text">Hit<br><br>Damage, Power: 0.5 * Strength, 1</div></div>
+                        <div id="throw" class="skill-placement attack hidden">
+                            <div class="overlay-text">Hit<br><br>Damage, Power: 0.5 * Strength, 1</div></div>
+                        <div id="touch" class="skill-placement attack hidden">
+                            <div class="overlay-text">Hit<br><br>Damage, Power: 0.5 * Strength, 1</div></div>
+                        <div id="grab" class="skill-placement attack hidden">
+                            <div class="overlay-text">Hit<br><br>Damage, Power: 0.5 * Strength, 1</div></div>
+                        <div id="shove" class="skill-placement attack hidden">
+                            <div class="overlay-text">Hit<br><br>Damage, Power: 0.5 * Strength, 1</div></div>
+                        <div id="block" class="skill-placement reaction hidden"></div>
+                        <div id="dodge" class="skill-placement reaction hidden"></div>
+                        <div id="counter" class="skill-placement reaction hidden"></div>
+                        <div id="parry" class="skill-placement reaction hidden"></div>
+                        <div id="uncannydodge" class="skill-placement reaction hidden"></div>
+                        <div id="footwork" class="skill-placement reaction hidden"></div>
+                        <div id="feint" class="skill-placement maneuver hidden"></div>
+                        <div id="divert" class="skill-placement maneuver hidden">divert attention (kenjaku vs yuki)</div>
+                        <div id="nsei1" class="skill-placement maneuver hidden">se acertar um chute no torso, pode agarrar ele com o pe e prender ele no chao com o pe (shinobi owl)</div>
+                    </div>
+                </div>
+                <div class="choice-bar hidden">
+                    <div class="choice-container">
+                        <div class="choose-skill">Attacks</div>
+                        <div class="choose-skill">Reactions</div>
+                        <div class="choose-skill">Specials</div>
+                        <div class="choose-skill">Support</div>
+                        <div class="choose-skill">Enhancements</div>
+                        <div class="choose-skill">Movement</div>
+                        <div class="choose-skill">Tactical</div>
+                        <div class="choose-skill">Maneuvers</div>
+                    </div>
+
+                </div>
+                <div id="log-area">
+                    <div id="banner-1"></div>
+                    <div id="banner-2"></div>
+                    <div id="log-container"></div>
+                    <button class="choice-buttons" id="choice-btn">Skills</button>
+                    <button class="choice-buttons" id="endturn">End Turn</button>
+                </div>
+            </div>
+            <div id="divisoria2"></div>
+        </div>
+    </section>
+
+    <script src="./script/index.js"></script>
+    <script src="./script/tech.js"></script>
+</body>
+
+</html>
